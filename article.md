@@ -32,9 +32,81 @@ Issues with the distribution of the data - Data is collected downstream of previ
 
 ## Limits of Algorithmic Fairness in RAI Outputs for Real-World Outcomes
 
-RAIs are not standalone systems but parts of complex socio-technical networks involving human and institutional discretion. While algorithmic fairness is often a design goal, achieving real-world fairness is challenging because multiple actors interpret and apply RAI predictions differently. Judges frequently exercise their discretion, sometimes ignoring or overriding RAI recommendations, which can undermine the tool’s fairness, especially when racial bias in decisions is observed—studies have shown that judges may deviate from RAI recommendations more for Black defendants than for white ones. Moreover, jurisdictions can set varying thresholds for risk levels, which creates inconsistencies in outcomes across locations. This is notable in COMPAS, where critiques centered around the racial disparities in its risk scores and the potential for bias, highlighting how RAIs might perpetuate inequalities when local authorities adapt or disregard the algorithm’s guidelines. Ultimately, human judgment in interpreting and applying RAI outputs significantly affects the fairness of outcomes, as even the fairest algorithm cannot ensure equitable results if misused or inconsistently applied.
+RAIs part of a network which involvs human and institutional discretion. Even if the algorithmic fairness if an intended goal, achieving real-world fairness is on another level of difficulty due to how actors interpret and apply RAI predictions.
+
+Judges sometimes ignore or override RAI recommendations, possibly causing the undermine of the tool's fairness, especially when racial bias in decisions is observed.
+
+Judges deviate from RAI recommendations more for Black defendants than for white ones.
+
+Thresholds for risk levels can vary, caused by jurisdictions, creating inconsistencies in outcomes.
+
+Fair algorihthms cannot ensure equitable results due to human misuse or inconsistent application of it.
 
 
 ## Normative Values Embedded in Use of RAI Datasets
 
-Researchers developing RAIs for the criminal legal system engage in more than just technical work on fair algorithms; they enter a broader ethical debate on values like fairness, justice, equality, and power. This work inherently involves grappling with normative assumptions tied to crime and justice. Key areas of concern include the chosen tasks and outcomes: these often inherit implicit values from previous benchmarks, prioritizing risk reduction through incarceration over alternatives like rehabilitation, which can perpetuate harm to individuals and communities. The use of statistical fairness objectives introduces limitations since algorithmic fairness measures may fail to align with broader social ideals of fairness, which are dynamic and context-dependent. Researchers must consider whether their chosen fairness metrics truly address social inequities or merely reflect the biases of existing systems. Real-world impact considerations in RAI research implicitly support certain criminal justice reforms, such as decarceration, decriminalization, or bail reform, each of which reflects distinct values and theories about justice and change. 
+Researchers must enter an ethical debate on values like fairness, justice, equality nad power which involves grappling with assumptions tied to crime and justice.
+
+Key areas: 
+    - chosen tasks 
+    - outcomes
+
+Ofter inherit implicit values from previous benchmarks taking risk reduction through incarceration over alternatives like rehabilitation, causing harm to individuals and communities.
+
+Statisticall fairness objectives introduce limitations since algorithmic fairness measures may fail to align with broader social ideals of fairness, which are dynamic and context-dependent.
+
+## Established Norms in Fields Engaged in Criminal Justice Work
+
+Dataset Creation Process:
+- Data Collection:  
+    - Data access has to be taken into account, so the problem of collecting data is troublesome.
+    - The administrative records that contain CJ-related data (covariates and outcomes) are stored across multiple systems and agencies with varying identifiers, granularity, and accuracy, requiring intricate record linkage.
+    - Management systems are usually outdated, requiring manual data entry and cleaning, which can introduce errors.
+    - Interviews add another layer of complexity and potential bias.
+
+- Standards:
+    - Key Metrics: 
+        - Discrimination: Measures how effectively an instrument distinguishes between individuals who do or do not experience the outcome of interest.
+        - Calibration: Measures how well the predicted probabilities align with the observed outcomes.
+
+- Language Guidelines
+    - Evolving Terminology: Language use in criminal justice research is shifting to emphasize humanity and avoid dehumanizing terms.
+    - Guides and Standards: Recommendations are available from resources like APA Standards for Bias-Free Language and domain-specific publications.
+    - Impact on Fairness: Using respectful and current language helps prevent marginalization and aligns with fairness objectives in AI/ML research.
+
+## Mismatch Between AI Fairness Practices and Criminal Justice Research
+
+Focus on Methods Papers.
+
+Datasets are treated as benchmarks for performance rather than as sources for understanding the social context of the data. 
+
+Performance measures take precedence over meaningful analysis or interpretation of the dataset.
+
+Misleading conclusions arise from lack of understanding the social or operational context of the data (e.g., "high-risk" predictions misinterpreted as desirable outcomes).
+
+Align incentives to focus on meaningful engagement with CJ goals.
+
+Collaborate with domain experts to understand data contexts.
+
+Recognize the distinction between scientific and methods contributions.
+
+Challenge the overuse of flawed datasets like COMPAS by emphasizing better, context-aware benchmarks.
+
+## Call To Arms
+
+What Researchers Should Avoid
+Using CJ-Related Datasets for General Fairness Benchmarks:
+
+Avoid treating datasets like COMPAS as generic real-world examples to evaluate fairness measures. Such datasets require domain-specific interpretation, and misusing them risks misleading conclusions about CJ issues.
+
+CJ datasets are context-sensitive, varying across jurisdictions, legal systems, and data collection methods. Broad or oversimplified conclusions undermine the complexities of the domain and can be politically contentious.
+
+Clearly articulate modeling assumptions, limitations, and real-world consequences of deploying such systems.
+
+Use simulations or alternate benchmarks where appropriate, and reviewers should encourage this over inappropriate real-world dataset use.
+
+Identify implicit value positions, biases, and contested assumptions embedded in fairness interventions and their measures.
+
+Assess standard metrics (e.g., AUC scores) critically, as they may not reflect disparities across demographics or thresholds.
+
+Develop and adopt new measures (e.g., predictive multiplicity) that reveal nuanced model behaviors and disparities.
