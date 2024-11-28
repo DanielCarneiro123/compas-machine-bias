@@ -16,7 +16,7 @@ Due to FTA being a binary outcome, using this attribute for predictions will res
 
 
 Bias in A - group-level attributes used for disparity assessment ['sex','race',etc.]. Even when the protected attribute information appears, it is ofted under noisy measurement processes. COMPAS race categories lack Native Hawaiian or Other Pacific Islander, and redefine Hispanic as race instead of ethnicity.
-Solution:  proxy measures (distribution of race by geographic location) 
+Solution:  proxy measures (distribution of race by geographic location) are considered noisy misclassifications of the protected attribute., removing them might reduce the bias.
 
 
 Bias in X - Many covariates used in pretrial are low dimensional summaries of criminal history, such as past arrests or convictions. These measures inherit the biases of the local law enforcement. Black man were arrested more times for trivial things! 
