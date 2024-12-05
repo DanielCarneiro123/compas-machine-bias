@@ -1,8 +1,7 @@
 # Compas Machine Bias
 
 ## Case Study Description
-COMPAS (Correctional Offender Management Profiling for Alternative Sanctions) is an algorith-
-mic system used in the US criminal justice system to predict the risk of criminal recidivism. It
+COMPAS (Correctional Offender Management Profiling for Alternative Sanctions) is an algorithmic system used in the US criminal justice system to predict the risk of criminal recidivism. It
 has gained notoriety for accusations of racial bias, as studies show that black people tend to receive
 unfairly higher risk assessments when compared to white people with similar criminal histories. This
 case raises ethical questions about the use of AI in decisions that affect people’s freedom, involving
