@@ -1,0 +1,6 @@
+aequitas 
+numpy
+pandas
+aif360 
+fairlearn 
+'aif360[inFairness]'
