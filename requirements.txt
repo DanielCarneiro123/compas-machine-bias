@@ -3,4 +3,4 @@ numpy
 pandas
 aif360 
 fairlearn 
-'aif360[inFairness]'
+aif360[inFairness]
