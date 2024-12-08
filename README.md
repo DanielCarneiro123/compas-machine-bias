@@ -51,7 +51,7 @@ The aim of this project is to:
 Key findings from the analysis:
 - Significant disparities in prediction accuracy and error rates across racial groups.
 
-Refer to the report (To be done) and notebook for insights.
+Refer to the [report](https://pt.overleaf.com/read/cmbrzsfqfjzv#b5270f) and notebook for insights.
 
 ## References
 
@@ -60,6 +60,7 @@ Refer to the report (To be done) and notebook for insights.
 - [AIF360](https://aif360.res.ibm.com/)
 - [FairLearn](https://fairlearn.org/)
 - [Aequitas](https://github.com/dssg/aequitas)
+- [report](https://pt.overleaf.com/read/cmbrzsfqfjzv#b5270f)
 
 ## Contact
 For questions or suggestions, feel free to reach out:
